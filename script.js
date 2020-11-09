@@ -1,3 +1,8 @@
+function randomMessage(array) {
+  let random = Math.floor(Math.random() * array.length);
+  return array[random];
+}
+
 const response = ["AIDS.",
   "Getting cummed on.",
   "Racism.",
@@ -40,5 +45,5 @@ const prompt = ["Next from J.K. Rowling: Harry Potter and the Chamber of ___.",
   "War! What is it good for?",
   "Kids, I don't need drugs to get high. I'm high on ___."];
 
-console.log(prompt);
-console.log(response);
+console.log(randomMessage(prompt));
+console.log(randomMessage(response));
